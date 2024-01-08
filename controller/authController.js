@@ -3,7 +3,7 @@ const jwt =  require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 const UserModel = require("../models/userModel");
 const secrets =  require("../secrets");
-const mailSender = require("../../raw/poc/mailsender");
+const mailSender = require("../utilities/mailsender");
 async function signupController(req,res){
     try{
         let data = req.body;
